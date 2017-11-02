@@ -8,14 +8,15 @@ The project has the following structure:
 data-512-a2/
   |- analysis/
      |- README.md
-     |- analysis.png
+     |- viz1.png
+     |- viz2.png
+     |- viz3.png
   |- data_clean/
      |- README.md
      |- combined_data.csv
   |- data_raw/
      |- README.md
      |- page_data.csv
-     |- Population Mid-2015.csv
   |- src/
      |- README.md
      |- hcds-a2-bias.ipynb
@@ -25,11 +26,23 @@ data-512-a2/
 
 The goal of this assignment is to explore the concept of 'bias' through data on Wikipedia articles - specifically, articles on political figures from a variety of countries.
 
-### License and link
+### Licenses and links
 
-Data was gathered from the ORES (Objective Revision Evaluation Service) API, Wikimedia Foundation, 2017. CC-BY-SA 3.0
+The wikipedia article dataset, "Politicians by Country from the English-language Wikipedia," was obtained from Figshare on 10/29/2017. It was publicly posted by Oliver Keyes.
+
+https://figshare.com/articles/Untitled_Item/5513449
+
+- CC-BY 4.0
+
+The population dataset, "Population Mid-2015," was obtained from the Population Reference Bureau on 10/27/2017. The link for this data is NOT provided and it is NOT included in the repository as it is copyrighted.
+
+- Copyright © 2016, Population Reference Bureau. All rights reserved.
+
+Data was gathered from the ORES (Objective Revision Evaluation Service) API, 2017. It was obtained on 10/29/2017. While no license was found on ORES, it has been attributed to the same license as the Wikimedia Foundation.
 
 https://wikimediafoundation.org/wiki/Terms_of_Use/en
+
+- CC-BY-SA 3.0
 
 ### Relevant API documentation
 
@@ -44,8 +57,6 @@ C | C-class article
 Start | Start-class article
 Stub | Stub-class article
 
-	???Data accessible via this endpoint is available under the CC0 1.0 license.
-
 ### Cleaned data
 
 The [cleaned data](/data_clean) file is in a `.csv` format and contains five columns in the following format:
@@ -58,8 +69,6 @@ revision_id | str
 article_quality | str
 population | str
 
-???The integers for each column other than 'year' and 'month' represent the number of views for the respective column. For dates where no data was given for a particular API pull, a value of 0 will be used.
-
 ### Issues/special considerations
 
 Combining the datasets removed rows...
@@ -68,4 +77,4 @@ Combining the datasets removed rows...
 
 ### Additional attribution(s)
 
-???Relevant information pertaining to this assignment and API documentation was gathered from HCDS (Fall 2017) Assignments. CC-BY-SA 3.0
+Relevant information pertaining to this assignment and API documentation was gathered from [HCDS (Fall 2017) Assignments](https://wiki.communitydata.cc/HCDS_(Fall_2017)/Assignments#A2:_Bias_in_data). CC-BY-SA 3.0
