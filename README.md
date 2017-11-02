@@ -26,6 +26,17 @@ data-512-a2/
 
 The goal of this assignment is to explore the concept of 'bias' through data on Wikipedia articles - specifically, articles on political figures from a variety of countries.
 
+To do this, we will combine a dataset of Wikipedia articles with a dataset of country populations. An intermediary step will be taken with the Wikipedia articles dataset using ORES (_see Relevant API documentation_) to append an article quality prediction.
+
+We will then perform an analysis of how the coverage of politicians on Wikipedia and the quality of articles about politicians varies between countries. The [analyis](/analysis) includes a series of bar graphs and tables depicting the following:
+
+1. 10 highest-ranked countries in terms of number of politician articles as a proportion of country population
+2. 10 lowest-ranked countries in terms of number of politician articles as a proportion of country population
+3. 10 highest-ranked countries in terms of number of GA and FA-quality articles as a proportion of all articles about politicians from that country
+4. 10 lowest-ranked countries in terms of number of GA and FA-quality articles as a proportion of all articles about politicians from that country
+
+In conclusion, I will reflect on how this analysis helps me understand the causes and consequences of bias on Wikipedia.
+
 ### Licenses and links
 
 The wikipedia article dataset, "Politicians by Country from the English-language Wikipedia," was obtained from Figshare on 10/29/2017. It was publicly posted by Oliver Keyes.
@@ -75,9 +86,9 @@ The steps for reproducing this analysis can be found in the [src](/src) director
 
 ### Issues/special considerations
 
-Combining the datasets removed rows...
+- Combining the datasets removed rows where country names were not uniform. This is intentional and per the instructions of the analysis.
 
-???While the data requested from the API pull spans 01/01/2008 to 10/01/2017 (MM/DD/YYYY), the pagecounts data only spans 01/01/2008 to 08/01/2016. During this final month, the number of views appear significantly lower such that they could be deemed an outlier as the API pull may not have pulled views for the entire month of 08/2016 (MM/YYYY). As such, this month was included in the cleaned data, but is removed when visualizing during the analysis.
+- The [`page_data.csv`](/data_raw) contains revision ids that the ORES API may not find. These articles have most likely been deleted. The API call will list any relevant revision ids that were not found and a prediction value of 'NA' will be inserted into the article quality prediction.
 
 ### Additional attribution(s)
 
