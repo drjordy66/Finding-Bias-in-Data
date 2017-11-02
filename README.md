@@ -69,6 +69,10 @@ revision_id | str
 article_quality | str
 population | str
 
+### Reproducibility
+
+The steps for reproducing this analysis can be found in the [src](/src) directory both in the README.md and the [hcds-a2-bias.ipynb](/src/hcds-a2-bias.ipynb).
+
 ### Issues/special considerations
 
 Combining the datasets removed rows...
@@ -77,4 +81,6 @@ Combining the datasets removed rows...
 
 ### Additional attribution(s)
 
-Relevant information pertaining to this assignment and API documentation was gathered from [HCDS (Fall 2017) Assignments](https://wiki.communitydata.cc/HCDS_(Fall_2017)/Assignments#A2:_Bias_in_data). CC-BY-SA 3.0
+Relevant information pertaining to this assignment and API documentation was gathered from [HCDS (Fall 2017) Assignments](https://wiki.communitydata.cc/HCDS_(Fall_2017)/Assignments#A2:_Bias_in_data).
+
+- CC-BY-SA 3.0
