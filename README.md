@@ -28,7 +28,7 @@ The goal of this assignment is to explore the concept of 'bias' through data on 
 
 To do this, we will combine a dataset of Wikipedia articles with a dataset of country populations. An intermediary step will be taken with the Wikipedia articles dataset using ORES (_see Relevant API documentation_) to append an article quality prediction.
 
-We will then perform an analysis of how the coverage of politicians on Wikipedia and the quality of articles about politicians varies between countries. The [analyis](/analysis) includes a series of bar graphs and tables depicting the following:
+We will then perform an analysis of how the coverage of politicians on Wikipedia and the quality of articles about politicians varies between countries. The [analysis](/analysis) includes a series of bar graphs and tables depicting the following:
 
 1. 10 highest-ranked countries in terms of number of politician articles as a proportion of country population
 2. 10 lowest-ranked countries in terms of number of politician articles as a proportion of country population
