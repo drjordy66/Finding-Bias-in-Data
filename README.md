@@ -1,4 +1,4 @@
-# A2_Bias_in_data
+# Finding Bias in Data
 
 ## Organization of the project
 
