@@ -24,7 +24,7 @@ data-512-a2/
 
 ### Goal
 
-The goal of this assignment is to explore the concept of 'bias' through data on Wikipedia articles - specifically, articles on political figures from a variety of countries.
+The goal of this project is to explore the concept of 'bias' through data on Wikipedia articles - specifically, articles on political figures from a variety of countries.
 
 To do this, we will combine a dataset of Wikipedia articles with a dataset of country populations. An intermediary step will be taken with the Wikipedia articles dataset using ORES (_see Relevant API documentation_) to append an article quality prediction.
 
@@ -91,9 +91,3 @@ The steps for reproducing this analysis can be found in the [src](/src) director
 - Combining the datasets removed rows where country names were not uniform. This is intentional and per the instructions of the analysis.
 
 - The [`page_data.csv`](/data_raw) contains revision ids that the ORES API may not find. These articles have most likely been deleted. The API call will list any relevant revision ids that were not found and a prediction value of 'NA' will be inserted into the article quality prediction.
-
-### Additional attribution(s)
-
-Relevant information pertaining to this assignment and API documentation was gathered from [HCDS (Fall 2017) Assignments](https://wiki.communitydata.cc/HCDS_(Fall_2017)/Assignments#A2:_Bias_in_data).
-
-- CC-BY-SA 3.0
